@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sondaż światopoglądowy</title>
+  <meta name="description" content="Interaktywny diagram światopoglądowy. Przejdź ścieżkę pytań i zobacz, jak nazywa się twój światopogląd.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <a class="logo-link" href="https://exekosciol.pl">
+          <img class="logo logo-exe" src="assets/logo-exe.png" alt="Kościół EXE" width="34" height="58">
+        </a>
+        <p class="brand-name">Sondaż światopoglądowy</p>
+      </div>
+      <nav class="top-nav">
+        <button type="button" data-view="quiz" class="nav-btn is-on">Diagram</button>
+        <button type="button" data-view="atlas" class="nav-btn">Karty</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="colophon">
+    <div class="colophon-inner">
+      <div class="logos">
+        <a class="logo-link" href="https://exekosciol.pl">
+          <img class="logo logo-exe" src="assets/logo-exe.png" alt="Kościół EXE" width="46" height="78">
+        </a>
+        <a class="logo-link" href="https://chsa.org.pl/">
+          <img class="logo" src="assets/logo-chsa.png" alt="ChSA" width="72" height="72">
+        </a>
+      </div>
+      <div>
+        <p class="credit">Stworzone przez <a href="https://exekosciol.pl">Kościół EXE</a> we współpracy z <a href="https://chsa.org.pl/">ChSA</a>.</p>
+        <p>Pytania, opisy i rozgałęzienia pochodzą z diagramu Camerona Blaira, © 2010 FEVA Ministries Inc. Pytania do rozmowy są zapisane głosem autora diagramu.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

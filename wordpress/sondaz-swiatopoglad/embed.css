@@ -1,0 +1,323 @@
+.sondaz {
+--ink: #1a1a1a;
+  --muted: #5c5c5c;
+  --line: #e6e6e6;
+  --paper: #f6f6f6;
+  --card: #ffffff;
+  --green: #31aa3c;
+  --green-soft: #eef8ef;
+  --shadow: none;
+  --sans: Barlow, "Avenir Next", "Segoe UI", sans-serif;
+margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+.sondaz, .sondaz * { box-sizing: border-box; }
+
+
+.sondaz button, .sondaz input { font: inherit; color: inherit; }
+.sondaz button { cursor: pointer; }
+.sondaz a { color: var(--green); font-weight: 600; }
+.sondaz img { display: block; max-width: 100%; }
+
+.sondaz .top { background: #fff; }
+.sondaz .top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+.sondaz .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.sondaz .logos { display: flex; align-items: center; gap: 10px; }
+.sondaz .logo-link { display: flex; line-height: 0; }
+.sondaz .logo { width: 52px; height: 52px; object-fit: contain; }
+.sondaz .logo-exe { width: auto; height: 58px; }
+.sondaz .brand-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.sondaz .top-nav { display: flex; gap: 6px; flex-shrink: 0; }
+.sondaz .nav-btn {
+  border: 0;
+  background: transparent;
+  border-radius: 20px;
+  padding: 10px 16px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.sondaz .nav-btn.is-on { background: var(--green); color: #fff; }
+.sondaz .nav-btn:hover { background: var(--green-soft); }
+.sondaz .nav-btn.is-on:hover { background: var(--green); }
+
+.sondaz .hero {
+  background: #000;
+  color: #fff;
+  padding: 56px 0 64px;
+}
+.sondaz .hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 48px;
+  align-items: end;
+}
+.sondaz .hero-copy { padding-bottom: 6px; }
+.sondaz .kicker {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--green);
+}
+.sondaz .hero .kicker { color: #7dce84; }
+.sondaz h1, .sondaz h2, .sondaz h3 { font-weight: 700; letter-spacing: -0.04em; margin: 0; line-height: 1.05; }
+.sondaz h1 { font-size: clamp(2.6rem, 5vw, 4.2rem); max-width: 14ch; }
+.sondaz .lede { font-size: 1.125rem; color: var(--muted); max-width: 40rem; margin: 18px 0 0; }
+.sondaz .hero .lede { color: #d7d7d7; margin-bottom: 28px; }
+.sondaz .hero .btn { margin-top: 8px; }
+
+.sondaz .wrap { max-width: 1120px; margin: 0 auto; padding: 40px 24px 72px; }
+.sondaz .layout { display: grid; grid-template-columns: minmax(0, 250px) minmax(0, 1fr); gap: 22px; align-items: start; }
+.sondaz .rail, .sondaz .panel {
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+.sondaz .rail { padding: 18px 16px 20px; position: sticky; top: 16px; }
+.sondaz .rail h2 { font-size: 1.15rem; margin-bottom: 12px; }
+.sondaz .path { list-style: none; margin: 0; padding: 0; }
+.sondaz .path li { position: relative; padding: 0 0 14px 18px; }
+.sondaz .path li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+.sondaz .path li:last-child::before { bottom: 12px; }
+.sondaz .path button,
+.sondaz .path button:hover,
+.sondaz .path button:focus {
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  white-space: normal;
+}
+.sondaz .step-q,
+.sondaz .step-a {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.sondaz .step-q { font-size: .82rem; color: var(--muted); font-weight: 400; }
+.sondaz .step-a { font-weight: 700; color: var(--ink); }
+.sondaz .dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--green);
+}
+.sondaz .empty-path { color: var(--muted); margin: 0; font-size: .95rem; }
+
+.sondaz .panel { padding: 32px 28px 28px; min-height: 420px; }
+.sondaz .panel h3 { margin: 28px 0 12px; font-size: 1.5rem; }
+.sondaz .kicker,
+.sondaz .question,
+.sondaz .lede,
+.sondaz .description,
+.sondaz .summary {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.sondaz .panel h2.question {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.12;
+  max-width: min(18ch, 100%);
+  letter-spacing: -0.04em;
+  color: var(--ink);
+}
+.sondaz .options { display: grid; gap: 10px; margin-top: 28px; }
+.sondaz .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  text-align: left;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 14px 16px;
+  font-weight: 600;
+}
+.sondaz .option > span:first-child { flex: 1; min-width: 0; }
+.sondaz .option:hover, .sondaz .option:focus-visible { border-color: var(--green); background: var(--green-soft); outline: none; }
+.sondaz .option .arrow { color: var(--green); }
+.sondaz .key {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: .8rem;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.sondaz .result-label {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-weight: 700;
+}
+.sondaz .summary { color: var(--muted); font-size: 1.15rem; margin: 12px 0 0; }
+.sondaz .description { font-size: 1.05rem; max-width: 62ch; line-height: 1.7; }
+.sondaz .questions { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.sondaz .questions li {
+  background: var(--paper);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.sondaz .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.sondaz .btn {
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: white;
+  padding: 12px 20px;
+  font-weight: 600;
+}
+.sondaz .btn.primary { background: var(--green); color: white; border-color: var(--green); font-size: 1.1rem; }
+.sondaz .btn.primary:hover { filter: brightness(1.05); }
+.sondaz .btn.ghost { background: transparent; }
+.sondaz .note {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--green);
+  background: var(--green-soft);
+  border-radius: 0 12px 12px 0;
+}
+
+.sondaz .atlas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+.sondaz button.atlas-card {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  line-height: 1.45;
+  white-space: normal;
+  text-overflow: clip;
+  overflow: visible;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 20px;
+  padding: 18px;
+  min-height: 150px;
+}
+.sondaz .atlas-card:hover { border-color: var(--green); }
+.sondaz button.atlas-card p {
+  color: var(--muted);
+  margin: 12px 0 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  white-space: normal;
+  overflow: visible;
+  overflow-wrap: break-word;
+}
+.sondaz .detail { margin-top: 18px; }
+.sondaz .wrap h1 { max-width: 16ch; margin-bottom: 12px; }
+
+.sondaz .colophon {
+  border-top: 1px solid var(--line);
+  padding: 28px 24px 40px;
+}
+.sondaz .colophon-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.sondaz .colophon .logo { width: 72px; height: 72px; }
+.sondaz .colophon .logo-exe { width: auto; height: 78px; }
+.sondaz .colophon p { margin: 0; color: var(--muted); font-size: .95rem; max-width: 68ch; }
+.sondaz .credit { color: var(--ink) !important; font-size: 1.05rem !important; margin-bottom: 6px !important; }
+
+@media (max-width: 900px) {
+  .sondaz .top-inner { padding: 12px 16px; }
+  .sondaz .brand-name { font-size: 1rem; }
+  .sondaz .logo-exe { height: 48px; }
+  .sondaz .hero { padding: 32px 0 40px; }
+  .sondaz .hero-inner { grid-template-columns: 1fr; gap: 20px; align-items: start; padding: 0 16px; }
+  .sondaz h1 { font-size: 2.15rem; max-width: none; }
+  .sondaz .wrap { padding: 16px 16px 40px; }
+  .sondaz .layout {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .sondaz .panel, .sondaz .rail { width: 100%; }
+  .sondaz .panel { order: -1; min-height: 0; padding: 20px 16px 18px; }
+  .sondaz .panel h2.question { max-width: none; font-size: 1.7rem; }
+  .sondaz .options { width: 100%; }
+  .sondaz .option { width: 100%; }
+  .sondaz .rail { position: static; max-height: 180px; overflow: auto; }
+  .sondaz .key { display: none; }
+  .sondaz .colophon { padding: 24px 16px 32px; }
+  .sondaz .colophon-inner { align-items: flex-start; }
+  .sondaz .colophon .logo-exe { height: 64px; }
+  .sondaz .colophon .logo { width: 56px; height: 56px; }
+}
+
+
+.sondaz .hero h1 { color: #fff; }
+.sondaz .rail { top: 96px; }
+.sondaz .brand .logo-link { display: none; }
